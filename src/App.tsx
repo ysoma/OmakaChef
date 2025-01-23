@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Layout from './components/Layout';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import RenderMenuAndShoppingList from './components/RenderMenuAndShoppingList';
 import RecipeDetailsModal from './components/RecipeDetailsModal';
 import { generateWeeklyMenu } from './utils';
@@ -53,6 +54,7 @@ const App = () => {
           onClose={closeRecipeDetails}
         />
       )}
+      <Footer />
     </Layout>
   );
 };
